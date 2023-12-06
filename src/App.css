@@ -1,38 +1,170 @@
+/* App.css */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #3498db; /* You can choose your desired color */
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav li {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #aee73c; /* You can choose your desired hover color */
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row; /* 默认水平排列 */
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.filter-and-search {
+  margin-bottom: 20px; /* 为两个部分添加底边距 */
+}
+
+.course-list-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row; /* 默认水平排列 */
+}
+
+/* 将search-bar设置为独占一行 */
+.search-bar {
+  margin-bottom: 20px; /* 添加底边距，使其与下方元素有一些间距 */
+}
+
+/* 调整表格的样式，使其与Reset按钮分开一些距离 */
+.course-list table {
+  margin-bottom: 20px; /* 添加底边距，使其与下方元素有一些间距 */
+}
+
+/* 添加一个样式来控制Reset按钮 */
+.search-bar button {
+  margin-top: 10px; /* 调整Reset按钮的上边距，使其在垂直方向上与输入框有一些间距 */
+  padding: 5px 10px; /* 调整Reset按钮的内边距，使其更紧凑 */
+  background-color: #3498db; /* 你可以选择你喜欢的颜色 */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #2980b9; /* 你可以选择你喜欢的hover颜色 */
+}
+
+/* Add this to your CSS file or component */
+.user-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #555;
+}
+
+.learned-courses {
+  margin-bottom: 20px;
+}
+
+.creator-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.creator-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.task-buttons {
+  margin-top: 5px; /* Adjust the spacing as needed */
+}
+
+
+.button-gap {
+  margin-left: 8px; /* Adjust the spacing as needed */
+}
+
+
+
+/* Add more styles as needed */
+
+
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  nav li {
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 576px) {
+  nav ul {
+    flex-wrap: nowrap;
   }
+  nav li {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Add your styles for medium devices here */
+}
+
+@media (min-width: 992px) {
+  /* Add your styles for large devices here */
+}
+
+@media (min-width: 1200px) {
+  /* Add your styles for extra large devices here */
 }
